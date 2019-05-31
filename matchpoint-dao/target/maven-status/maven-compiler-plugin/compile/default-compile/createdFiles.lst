@@ -1,0 +1,6 @@
+matchpoint\dao\CityDao.class
+matchpoint\dao\UserDao.class
+matchpoint\mapper\MpUserMapper.class
+matchpoint\mapper\CityMapper.class
+matchpoint\mapper\UserMapper.class
+matchpoint\dao\MpUserDao.class

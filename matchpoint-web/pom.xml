@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>matchpoint</artifactId>
+        <groupId>org.cn</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <groupId>org.cn</groupId>
+    <artifactId>matchpoint-web</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>matchpoint-web</name>
+    <packaging>war</packaging>
+    <description>matchpoint-web project for Spring Boot</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <matchpoint.version>0.0.1-SNAPSHOT</matchpoint.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.cn</groupId>
+            <artifactId>matchpoint-bean</artifactId>
+            <version>${matchpoint.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cn</groupId>
+            <artifactId>matchpoint-dao</artifactId>
+            <version>${matchpoint.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cn</groupId>
+            <artifactId>matchpoint-service</artifactId>
+            <version>${matchpoint.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.cn</groupId>
+            <artifactId>matchpoint-common</artifactId>
+            <version>${matchpoint.version}</version>
+        </dependency>
+        <!-- Spring Boot Freemarker 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <!--MyBatis分页插件-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.10</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>web</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>matchpoint.web.MatchpointWebApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,6 @@
+matchpoint\service\MpUserService.class
+matchpoint\service\Impl\CityServiceImpl.class
+matchpoint\service\Impl\MpUserServiceImpl.class
+matchpoint\service\CityService.class
+matchpoint\service\Impl\UserServiceImpl.class
+matchpoint\service\UserService.class
